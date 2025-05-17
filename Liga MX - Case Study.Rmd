@@ -85,6 +85,8 @@ total_stats <- full_join(home_wins, away_wins, by = "team") %>%
   ) %>%
   select(team, total_wins, total_losses, total_draws) %>%
   arrange(desc(total_wins))
+
+print(head(total_stats, 22))
 ```
 
 ## Case Study Plot with Logos
